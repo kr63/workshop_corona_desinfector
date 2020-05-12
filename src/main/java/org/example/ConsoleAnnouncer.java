@@ -2,7 +2,8 @@ package org.example;
 
 public class ConsoleAnnouncer implements Announcer {
 
-    private final Recommendator recommendator = ObjectFactory.getInstance().createObject(Recommendator.class);
+    @InjectByType
+    private Recommendator recommendator;
 
     @Override
     public void announce(String message) {
