@@ -9,8 +9,8 @@ import java.util.Set;
 public class JavaConfig implements Config {
 
     @Getter
-    private Reflections scanner;
-    private Map<Class, Class> ifc2ImplClass;
+    private final Reflections scanner;
+    private final Map<Class, Class> ifc2ImplClass;
 
     public JavaConfig(String packageToScan, Map<Class, Class> ifc2ImplClass) {
         this.scanner = new Reflections(packageToScan);
@@ -27,4 +27,5 @@ public class JavaConfig implements Config {
             return classes.iterator().next();
         });
     }
+
 }

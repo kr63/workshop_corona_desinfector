@@ -2,8 +2,8 @@ package org.example;
 
 public class CoronaDisinfector {
 
-    private Announcer announcer = ObjectFactory.getInstance().createObject(Announcer.class);
-    private Policeman policeman = ObjectFactory.getInstance().createObject(Policeman.class);
+    private final Announcer announcer = ObjectFactory.getInstance().createObject(Announcer.class);
+    private final Policeman policeman = ObjectFactory.getInstance().createObject(Policeman.class);
 
     public void start(Room room) {
         announcer.announce("disinfect begin!");
@@ -15,4 +15,5 @@ public class CoronaDisinfector {
     private void disinfect(Room room) {
         System.out.println("disinfect!");
     }
+
 }

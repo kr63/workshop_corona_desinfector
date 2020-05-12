@@ -37,4 +37,5 @@ public class InjectPropertyAnnotationObjectConfigurator implements ObjectConfigu
             }
         }
     }
+
 }
