@@ -1,12 +1,15 @@
 package org.example;
 
+import javax.annotation.PostConstruct;
+
 public class PolicemanImpl implements Policeman {
 
     @InjectByType
     private Recommendator recommendator;
 
-    public PolicemanImpl() {
-        System.out.println(recommendator.getClass());
+    @PostConstruct
+    public void init() {
+        System.out.println("Call init method in PolicemanImpl");
     }
 
     @Override
