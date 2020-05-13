@@ -1,6 +1,7 @@
 package org.example;
 
 @Singelton
+@Deprecated
 public class RecommendatorImpl implements Recommendator {
 
     @InjectProperty("wisky")
