@@ -1,5 +1,10 @@
 package org.example;
 
+import org.example.model.CoronaDisinfector;
+import org.example.model.Policeman;
+import org.example.model.PolicemanImpl;
+import org.example.model.Room;
+
 import java.util.HashMap;
 import java.util.Map;
 

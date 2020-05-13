@@ -1,4 +1,6 @@
-package org.example;
+package org.example.config;
+
+import org.example.ApplicationContext;
 
 public interface ObjectConfigurator {
 

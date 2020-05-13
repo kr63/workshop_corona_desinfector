@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.config.JavaConfig;
+
 import java.util.Map;
 
 public class Application {

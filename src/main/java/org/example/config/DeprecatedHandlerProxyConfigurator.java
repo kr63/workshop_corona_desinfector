@@ -1,4 +1,4 @@
-package org.example;
+package org.example.config;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.InvocationHandler;

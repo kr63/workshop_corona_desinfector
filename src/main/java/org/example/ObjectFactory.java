@@ -1,6 +1,8 @@
 package org.example;
 
 import lombok.SneakyThrows;
+import org.example.config.ObjectConfigurator;
+import org.example.config.ProxyConfigurator;
 
 import javax.annotation.PostConstruct;
 import java.lang.reflect.InvocationTargetException;

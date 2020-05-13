@@ -2,6 +2,8 @@ package org.example;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.example.annotation.Singelton;
+import org.example.config.Config;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

@@ -1,6 +1,8 @@
-package org.example;
+package org.example.config;
 
 import lombok.SneakyThrows;
+import org.example.ApplicationContext;
+import org.example.annotation.InjectByType;
 
 import java.lang.reflect.Field;
 

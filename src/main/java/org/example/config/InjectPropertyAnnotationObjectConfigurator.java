@@ -1,6 +1,8 @@
-package org.example;
+package org.example.config;
 
 import lombok.SneakyThrows;
+import org.example.ApplicationContext;
+import org.example.annotation.InjectProperty;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

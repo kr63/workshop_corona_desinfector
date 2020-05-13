@@ -1,4 +1,7 @@
-package org.example;
+package org.example.model;
+
+import org.example.annotation.InjectProperty;
+import org.example.annotation.Singelton;
 
 @Singelton
 @Deprecated
