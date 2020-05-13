@@ -8,9 +8,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class ApplicationContext {
 
-    private Map<Class, Object> cache = new ConcurrentHashMap<>();
+    private final Map<Class, Object> cache = new ConcurrentHashMap<>();
     @Getter
-    private Config config;
+    private final Config config;
     @Setter
     private ObjectFactory factory;
 

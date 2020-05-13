@@ -1,5 +1,6 @@
 package org.example;
 
+@Deprecated
 public class CoronaDisinfector {
 
     @InjectByType

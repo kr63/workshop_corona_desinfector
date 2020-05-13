@@ -29,11 +29,8 @@ public class ObjectFactory {
     public <T> T createObject(Class<T> implClass) {
         T t = create(implClass);
         configure(t);
-        invokeInit(implClass, t);
-
+        invokeInitMethod(implClass, t);
         t = wrapWithProxyIfNeeded(implClass, t);
-
-
         return t;
     }
 
@@ -44,7 +41,7 @@ public class ObjectFactory {
         return t;
     }
 
-    private <T> void invokeInit(Class<T> implClass, T t) throws IllegalAccessException, InvocationTargetException {
+    private <T> void invokeInitMethod(Class<T> implClass, T t) throws IllegalAccessException, InvocationTargetException {
         for (Method method : implClass.getMethods()) {
             if (method.isAnnotationPresent(PostConstruct.class)) {
                 method.invoke(t);
