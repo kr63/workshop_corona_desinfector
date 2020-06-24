@@ -2,7 +2,7 @@ package org.example;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.example.annotation.Singelton;
+import org.example.annotation.Singleton;
 import org.example.config.Config;
 
 import java.util.Map;
@@ -33,7 +33,7 @@ public class ApplicationContext {
 
         T t = factory.createObject(implClass);
 
-        if (implClass.isAnnotationPresent(Singelton.class)) {
+        if (implClass.isAnnotationPresent(Singleton.class)) {
             cache.put(type, t);
         }
 

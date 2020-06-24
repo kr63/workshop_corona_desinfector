@@ -1,9 +1,9 @@
 package org.example.model;
 
 import org.example.annotation.InjectProperty;
-import org.example.annotation.Singelton;
+import org.example.annotation.Singleton;
 
-@Singelton
+@Singleton
 @Deprecated
 public class RecommendatorImpl implements Recommendator {
 
